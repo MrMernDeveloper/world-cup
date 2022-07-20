@@ -60,7 +60,7 @@ body {
     animation-name: example;
     animation-duration: 2.5s;
     animation-delay: .2s;
-    animation-iteration-count: 2;
+    animation-iteration-count:3;
 }
 @keyframes example {
     0% {
