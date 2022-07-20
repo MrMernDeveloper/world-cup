@@ -52,7 +52,27 @@ body {
     background-image: linear-gradient(#DD0000, #DD0000);
     padding: 16px 25px;
     border-radius: 5px;
+    
+}
+.animation {
+    
+    position: relative;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-delay: .5s;
+}
+@keyframes example {
+    0% {
+        background-color: #161616;
+        left: 0px;
+        top: 0px;
+    }
 
+    20% {
+        background-color: #161616;
+        left: 100px;
+        top: 0px;
+    }
 }
 
 .top-payer-icon img {
