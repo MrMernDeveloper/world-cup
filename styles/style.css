@@ -58,7 +58,7 @@ body {
     
     position: relative;
     animation-name: example;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-delay: .5s;
 }
 @keyframes example {
