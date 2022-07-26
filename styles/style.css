@@ -30,6 +30,7 @@ body {
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
     color: #FFFFFF;
+    padding-left: 5%;
 
 
 
@@ -38,12 +39,16 @@ body {
 .main-title {
     font-Weight: 700;
     font-size: 60px;
+    
 
 }
 
-.top-paragrapg {
+.first-title .top-para {
+    
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
+   
+    
 }
 
 .top-button {
@@ -53,15 +58,18 @@ body {
     padding: 16px 25px;
     border-radius: 5px;
     
+
 }
+
 .animation {
-    
+    width: 60%;
     position: relative;
     animation-name: example;
     animation-duration: 2.5s;
-    animation-delay: .2s;
-    animation-iteration-count:3;
+    animation-delay: .1s;
+    animation-iteration-count: infinite;
 }
+
 @keyframes example {
     0% {
         background-color: #161616;
@@ -69,9 +77,9 @@ body {
         top: 0px;
     }
 
-    20% {
+    10% {
         background-color: #161616;
-        left: 100px;
+        left: 30px;
         top: 0px;
     }
 }
@@ -154,6 +162,7 @@ body {
 .full-match .match {
     justify-content: space-evenly;
     margin-bottom: 20px;
+    padding-left: 7%;
 }
 
 .full-match .transfer {
@@ -164,6 +173,7 @@ body {
 
 .match-margin {
     margin-top: 15px;
+
 }
 
 .icon-section .span-icon {
@@ -229,9 +239,16 @@ footer .icon {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 24px;
     grid-column-gap: 24px;
-    
+    grid-row-gap: 24px;
+
+
+}
+
+.match-body {
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px rgba(22, 22, 22, 0.7);
 }
 
 .match-body {
@@ -265,34 +282,39 @@ footer .icon {
 
 @media only screen and (max-width:688px) {
 
-
     .top-section {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        width: 100%;
+        width: 90%;
+        margin: auto;
         height: auto;
         overflow-x: hidden;
+        margin-top: 50px;
 
     }
 
-    .first-title {
-        justify-content: center;
-        justify-items: center;
-    }
+ 
 
     .first-title .main-title {
         display: block;
-        width: 100%;
+        text-align: center;
+        width: 95%;
         height: auto;
         font-Weight: 700;
         font-size: 40px;
 
     }
 
-    .first-title .top-paragrapg {
+     .top-para {
+        padding-right: 7%;
+        width: 60%;
         font-size: 16px;
         text-align: center;
-        overflow-x: hidden;
+        margin: 50px auto;
+    }
+    .animation{
+        margin: auto;
+        padding-left: 10%;
     }
 
     .top-payer-icon img {
@@ -305,15 +327,16 @@ footer .icon {
     .second-section {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-        overflow-x: hidden;
-
+        margin: 30px 60px;
     }
 
     .match-sidebar {
         background-color: white;
         width: 100%;
-        overflow-x: hidden;
+        justify-content: center;
+        justify-items: center;
+        margin: auto;
+
 
     }
 
@@ -323,6 +346,18 @@ footer .icon {
         width: 100%;
         overflow-x: hidden;
         justify-content: center;
+        overflow-x: hidden;
+        margin: auto;
+    }
+
+    .multiple-match {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        overflow-x: hidden;
+        justify-content: center;
+        overflow-x: hidden;
+        margin: auto;
     }
 
     footer {
@@ -339,11 +374,6 @@ footer .icon {
 
     }
 
-    .multiple-match {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        height: auto;
-    }
 }
 
 
@@ -356,14 +386,21 @@ footer .icon {
 @media only screen and (min-width:688px) and (max-width:992px) {
 
     .top-section {
-        width: 100%;
+        margin: 50px auto;
+        width: 90%;
         height: auto;
         overflow-x: hidden;
+    }
+
+    .first-title {
+
+        margin-left: 70px;
     }
 
     .first-title .main-title {
         font-Weight: 700;
         font-size: 40px;
+
     }
 
     .first-title .top-paragrapg {
@@ -371,20 +408,20 @@ footer .icon {
     }
 
     .top-payer-icon img {
-        width: 80%;
+        width: 100%;
     }
 
     .match-sidebar {
         background-color: white;
         width: 100%;
         display: flex;
-
+        margin-bottom: -100px;
 
 
     }
 
     .match-sidebar button {
-        width: 215px;
+        width: 180px;
         height: 64px;
 
 
@@ -393,14 +430,14 @@ footer .icon {
 
     .second-section {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
+        grid-template-columns: repeat(1, 2fr);
+        margin: 30px 60px;
     }
 
     .all-matches {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        width: 100%;
+        grid-row-gap: 30px;
         justify-content: space-evenly;
         overflow-x: hidden;
     }
@@ -433,8 +470,9 @@ footer .icon {
     }
 
     .footer-info li {
-        display: inline-flex;
-        flex-wrap: wrap;
+        display: inline-block;
+        justify-content: center;
+
 
     }
 }
